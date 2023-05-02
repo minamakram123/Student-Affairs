@@ -1,0 +1,46 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url("../imgs/background.jpg");
+    background-size:cover; 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+h1{
+    color: black;
+    font-size: 60px;
+  
+}
+a{
+    text-decoration: none; 
+    color: black;
+    font-size: 30px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+}
+header .loge{
+    font-size: 50px;
+}
+header ul{
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+header ul li{
+    margin-right: 30px;
+}
+header ul li a{
+    padding: 10px 15px;
+    border-radius: 30px;
+}
+header ul li a:hover{
+    background: rgb(12, 11, 11);
+    color: rgb(255, 255, 255);
+}

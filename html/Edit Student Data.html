@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <div>
+        <h1   style="text-align:center;">Student Affairs </h1>
+        
+    </div>
+    <meta charset="UTF-8" . />
+    <title> Edit student data </title>
+    <link rel="stylesheet" href="../css/Edit Student Data.css">
+
+</head>
+
+<body>
+    <header>
+        <img src="../imgs/Computer science loga (2).jpg" alt="logo" width="130" >
+        <ul>
+            <li> <a href="Student Affairs.html" > Home Page </a></li>
+            <li> <a href="Add New Student.html" >Add New Student</a></li>
+            <li> <a href="Assign A Department.html">Assign A Department </a></li>
+            <li> <a href="Edit Student Data.html" class="Active">Edit Student Data </a></li>
+            <li> <a href="Search.html">Search </a></li>
+            <li> <a href="Status.html"> Status </a></li>
+        </ul>
+    </header>
+
+    <form action="" method="get">
+        <br>
+        <h2   style="text-align:center;">Edit Student Data</h2> 
+        <br>
+        <br>
+        <div>
+            <label>ID </label>
+            <input type="text" required value="1">
+        </div>
+        <br>
+        <div>
+            <label>Name</label>
+            <input type="text" required value="Ahmed Mohammed">
+        </div>
+        <br>
+        <div>
+            <label>Date of birth</label>
+            <input type="date" id="d">
+            <script>
+                document.getElementById("d").value = new Date().toISOString().substring(0, 10);
+            </script>
+        </div>
+        <br>
+        <div>
+            <label>GPA</label>
+            <input type="text" required value="3.9">
+        </div>
+        <br>
+        <div>
+            <label>Gender</label>
+            <br>
+            <input id="1" type="radio" name="gender" value="female">
+            <label for="1"> Female</label>
+            <input id="2" type="radio" name="gender" value="male" checked>
+            <label for="2">Male</label>
+        </div>
+        <br>
+        <div>
+            <label>Level</label>
+            <input type="text" required value="3">
+        </div>
+        <br>
+        <div>
+            <label>status</label>
+            <br>
+            <input id="3" type="radio" name="status" value="active" checked>
+            <label for="3"> Active</label>
+            <input id="4" type="radio" name="status">
+            <label for="4">Inactive</label>
+        </div>
+        <br>
+        <div>
+            <label>Department</label>
+            <input type="text" required disabled value="cs">
+        </div>
+        <br>
+        <div>
+            <label>Email</label>
+            <input type="email" required value="Ahmed@gmail.com">
+        </div>
+        <br>
+        <div>
+            <label>Phone number</label>
+            <input type="text" required value="012124242">
+        </div>
+        <br>
+        <div style="text-align:justify;">
+        <input style="height: 1cm;" type="submit" value="  Update  ">
+        <br>
+        <script src="../java script/Edit Student Data.js">
+        </script>
+        <button style="height: 1.5cm;" Onclick=" ConfirmDelete();" type="submit" name="actiondelete" value="1"><img src="../imgs/delete.jpg"
+                alt=" delete " width="40"> Delete </button>
+        </div>
+    </form>
+
+
+</body>
+
+</html>

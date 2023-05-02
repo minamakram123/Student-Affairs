@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <div>
+            <h1   style="text-align:center;">Student Affairs </h1>
+        </div>
+        <meta charset="UTF-8"./>
+        <title>  Add New Student </title>
+        <link rel="stylesheet" href="../css/Add New Student.css">
+        
+    </head>
+        
+    <body>
+        <header >
+            <img src="../imgs/Computer science loga (2).jpg" alt="logo" width="130" >
+            <ul>
+                <li> <a href="Student Affairs.html">Home Page </a></li>
+                <li> <a href="Add New Student.html"  class="Active">Add New Student</a></li>
+                <li> <a href="Assign A Department.html">Assign A Department </a></li>
+                <li> <a href="Edit Student Data.html">Edit Student Data </a></li>
+                <li> <a href="Search.html">Search </a></li>
+                <li> <a href="Status.html"> Status </a></li>
+            </ul>
+      
+            </header>
+        
+            <form action="">
+                <br>
+
+                <h1 style="text-align:center ;">Add New Student</h1>
+                <br>
+                <br>
+                <div>
+                    <label>User Name</label>
+                    <input type="text" required autofocus name="UN">
+                </div>
+                <br>
+                <div>
+                    <label>ID</label>
+                    <input type="number" min="1" required name="ID">
+                </div>
+                <br>
+                <div>
+                    <label>GPA</label>
+                    <input type="number" min="0" max="4" required name="GPA">
+                </div>
+                <br>
+                <div>
+                    <label>Birth Date</label>
+                    <input type="date"required name="Birth Dat" >
+            
+                </div>
+                <br>
+                <div>
+                    <label>Gender</label>
+                    <div>
+                        <input id="M" type="radio" name="gender">
+                        <label for="M">Male</label>
+                    </div>
+                    <div>
+                        <input id="F" type="radio" name="gender">
+                        <label for="F">Female</label >
+                    </div>
+                </div>
+                <br>
+                <div>
+                    <label>Level</label>
+                    <input list="levels" required name="level">
+                    <datalist id="levels">
+                    <option value="level one">
+                    <option value="level two">
+                    <option value="level three">
+                     <option value="level four">
+                    </datalist>
+                </div>
+                <br>
+                <div>
+                    <label>status</label>
+                    <div>
+                        <input id="A" type="radio" name="stat">
+                        <label for="A">Active</label>
+                    </div>
+                    <div>
+                        <input id="N" type="radio" name="stat">
+                        <label for="N">Nonactive</label >
+                    </div>
+                </div>
+                <br>
+                <div>
+                    <label>Dipartment</label>
+                    <input list="DIP" required name="level" >
+                    <datalist id="DIP">
+                    <option value="CS">
+                    <option value="AI">
+                    <option value="IS">
+                    <option value="IT">
+                    <option value="DS">
+                    </datalist>
+                </div>
+                <br>
+                <div>
+                    <label>Email</label>
+                    <input type="email" required name="mail">
+                </div>
+                <br>
+                <div>
+                    <label>phone number</label>
+                    <input type="number" minlength="11" maxlength="11" required placeholder="+20" name="num">
+        
+                </div >
+                <br>
+            <div style="text-align:justify;">
+                <input style="height: 1cm;"  type="submit" value="   Add    ">
+                <input style="height: 1cm;"  type="reset" value="   reset    ">  
+            </div>
+            </form>      
+    </body>
+     
+</html>
